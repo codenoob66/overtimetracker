@@ -1,0 +1,92 @@
+body {
+    background-color: #202124; /* Dark background */
+    color: #ffffff;
+}
+
+.ticket-container {
+    background-color: #2c2d30; /* Slightly lighter dark for containers */
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #fbbc05; /* Firebase Yellow */
+}
+
+input[type="text"] {
+    background-color: #3c4043;
+    border: 1px solid #5f6368;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #fbbc05; /* Firebase Yellow */
+}
+
+button.add-btn {
+    background-color: #f29900; /* Firebase Orange */
+    color: #202124;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.add-btn:hover {
+    background-color: #f5ad46;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #3c4043;
+    text-align: left;
+}
+
+th {
+    background-color: #3c4043;
+    color: #fbbc05; /* Firebase Yellow */
+}
+
+tr.completed {
+    text-decoration: line-through;
+    color: #9aa0a6;
+}
+
+.action-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #3c4043;
+}
+
+.check-btn svg {
+    stroke: #0f9d58; /* Green for complete */
+}
+
+.delete-btn svg {
+    stroke: #ea4335; /* Red for delete */
+}
+
+#no-tickets-row td {
+    text-align: center;
+    color: #9aa0a6;
+    padding: 20px;
+}

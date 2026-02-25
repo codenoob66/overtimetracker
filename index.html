@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oneTicketTracker</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-8 font-sans">
+    <div class="ticket-container w-full max-w-md">
+        <h1 class="text-3xl font-extrabold mb-6 text-center">Ticket Tracker</h1>
+        
+        <!-- Add Ticket Form -->
+        <div class="flex gap-2">
+            <input type="text" id="ticketInput" placeholder="Enter ticket description..." 
+                   class="flex-1">
+            <button id="addBtn" class="add-btn">Add</button>
+        </div>
+    </div>
+
+    <!-- Ticket List -->
+    <div class="ticket-container w-full max-w-4xl">
+        <h2 class="text-2xl font-bold mb-4 text-center">Tickets</h2>
+        <table class="w-full text-left table-auto">
+            <thead>
+                <tr>
+                    <th>Ticket Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="ticketList">
+                <tr id="no-tickets-row">
+                    <td colspan="2">No tickets found. Add one above!</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- App Logic -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
