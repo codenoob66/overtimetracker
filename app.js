@@ -13,6 +13,7 @@ import {
 const ticketInput = document.getElementById('ticketInput');
 const addBtn = document.getElementById('addBtn');
 const ticketList = document.getElementById('ticketList');
+const ticketCounter = document.getElementById('ticketCounter');
 const ticketsCol = collection(db, "tickets");
 
 // Create Ticket
@@ -45,6 +46,9 @@ onSnapshot(q, (snapshot) => {
 
 // Render all tickets and attach logic
 function renderTickets(snapshot) {
+    const ticketCount = snapshot.size;
+    ticketCounter.innerHTML = `Total Tickets: <span class="font-bold text-yellow-400">${ticketCount}</span>`;
+
     if (snapshot.empty) {
         ticketList.innerHTML = '<tr id="no-tickets-row"><td colspan="2">No tickets found. Add one above!</td></tr>';
         return;

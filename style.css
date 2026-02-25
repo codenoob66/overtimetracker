@@ -11,6 +11,18 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#ticketCounter {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+#ticketCounter span {
+    color: #fbbc05; /* Firebase Yellow */
+    font-weight: bold;
+}
+
 h1, h2 {
     color: #fbbc05; /* Firebase Yellow */
 }
